@@ -7,4 +7,7 @@ package com.hsbc.pattern.factory.factory1;
  * @create: 2018/12/23
  */
 public class CheesePizza extends Pizza {
+    public CheesePizza() {
+        this.name = "cheese pizza";
+    }
 }

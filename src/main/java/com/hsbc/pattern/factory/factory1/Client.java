@@ -8,7 +8,8 @@ package com.hsbc.pattern.factory.factory1;
  */
 public class Client {
     public static void main(String[] args){
-        PizzaStore pizzaStore = new PizzaStore();
+        SimplePizzaFactory simplePizzaFactory = new SimplePizzaFactory();
+        PizzaStore pizzaStore = new PizzaStore(simplePizzaFactory);
         pizzaStore.orderPizza(PizzaType.CHEESE);
         System.out.println("-----------------");
         pizzaStore.orderPizza(PizzaType.GREEK);

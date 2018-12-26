@@ -1,5 +1,7 @@
 package com.hsbc.pattern.factory.factory1;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 
 /**
@@ -8,6 +10,7 @@ import java.util.ArrayList;
  * @author: Kobe
  * @create: 2018/12/23
  */
+@Data
 public abstract class Pizza {
     String name;
     String dough;//生面团
