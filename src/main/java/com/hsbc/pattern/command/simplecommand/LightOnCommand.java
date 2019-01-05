@@ -1,4 +1,4 @@
-package com.hsbc.pattern.command;
+package com.hsbc.pattern.command.simplecommand;
 
 /**
  * @program: java-design
@@ -7,6 +7,7 @@ package com.hsbc.pattern.command;
  * @create: 2019/01/03
  */
 public class LightOnCommand implements Command {
+    /** command encapsulation receive */
     Light light;
 
     public Light getLight() {

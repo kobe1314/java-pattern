@@ -1,4 +1,4 @@
-package com.hsbc.pattern.command;
+package com.hsbc.pattern.command.simplecommand;
 
 /**
  * @program: java-design
@@ -8,9 +8,12 @@ package com.hsbc.pattern.command;
  */
 public class Client {
     public static void main(String[] args) {
+        //invoker ----> command ----> receiver
+        //invoker
         SimpleRemoteControl simpleRemoteControl = new SimpleRemoteControl();
         // a group command
         Light light = new Light();
+        //command encapsulation receive
         LightOnCommand lightOnCommand = new LightOnCommand();
         lightOnCommand.setLight(light);
 

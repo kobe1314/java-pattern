@@ -1,4 +1,4 @@
-package com.hsbc.pattern.command;
+package com.hsbc.pattern.command.simplecommand;
 
 /**
  * @program: java-design
